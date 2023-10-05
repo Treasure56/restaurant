@@ -1,0 +1,132 @@
+button {
+  background-color: #FEA116;
+  border: none;
+}
+
+button:hover{
+  background-color: black;
+  margin-left: 6px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+ 
+.a {
+  font-weight: 500;
+  color: black;
+}
+
+.top-bar {
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.top-bar p{
+  font-size: medium;
+}
+
+.sidebar {
+  
+  height: 100%;
+}
+
+body {
+  /* margin-top: 20px; */
+  background-color: lightgray;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sidebar a {
+  margin-left: 10px;
+  display: block;
+  color: black;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: white;
+}
+
+.pat {
+  padding-top: 100px;
+}
+
+.btn{
+  margin-left: 20px;
+}
+/* Sidebar styles */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 50px;
+  right: -250px;
+  background-color: #343a40;
+  /* padding-top: 20px; */
+  transition: 0.3s;
+  overflow-x: hidden;
+  margin-top: 30px;
+  z-index: 2;
+}
+
+.sidenav.show-sidebar {
+  right: 0;
+}
+
+.sidenav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #d3d3d3;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+/* menu bar  */
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.out {
+  margin-top: 170px;
+}
+
+.pat label{
+  display: block;
+  width: 200px;
+  background-color: #FEA116;
+  color: #ffffff;
+  padding: 10px;
+  margin-left: 90px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.pat input{
+  display: none;
+}
+
+@media  (max-width:768px) {
+  .pat label{
+    margin-left: 55px;
+  }
+  
+}
